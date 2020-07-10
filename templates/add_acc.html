@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<form action="{% url 'save_account' %}" method="post">
+{% csrf_token %}
+    <input type="number" placeholder="Account NO" name="t1" required><br><br>
+    <input type="text" placeholder="Branch Name" name="t2" required><br><br>
+    <input type="text" placeholder="IFSC Code" name="t3" required><br><br>
+    <select name="t4">
+        {% for x in data %}
+       <option>{{ x.idno }}</option>
+        {% endfor %}
+    </select><br><br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

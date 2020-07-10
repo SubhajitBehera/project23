@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<form action="{% url 'save_emp' %}"method="post">
+    {% csrf_token %}
+    <input type="number" placeholder="Employee No" required name="e1"><br><br>
+    <input type="text" placeholder="Employee Name" required name="e2"><br><br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

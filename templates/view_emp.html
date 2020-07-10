@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<table align="center" border="2" >
+    <tr bgcolor="#5f9ea0">
+        <th width="100">IDNO</th>
+        <th width="100">NAME</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+        <th width="100">{{ x.idno }}</th>
+        <th width="100">{{ x.name }}</th>
+        </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

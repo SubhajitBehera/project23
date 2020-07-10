@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<table align="center" border="2" bgcolor="aqua">
+    <tr>
+        <th width="100">Account Number</th>
+        <th width="100">Branch</th>
+        <th width="100">IFSC</th>
+        <th width="100">Employee Id</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+        <th>{{ x.acno }}</th>
+        <th>{{ x.branch }}</th>
+        <th>{{ x.ifsc }}</th>
+        <th>{{ x.emp_id }}</th>
+        <th>{{ x.emp.name }}</th>
+        </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

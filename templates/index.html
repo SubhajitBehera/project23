@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+ <a href="{% url 'add_emp' %}">
+     <h1>Add Employee</h1>
+ </a>
+<a href="{% url 'view_emp' %}">
+    <h1>View All Employees</h1>
+</a>
+<a href="{% url 'add_acc' %}">
+    <h1>Add Account to a Employee</h1>
+</a>
+<a href="{% url 'view_acc' %}">
+    <h1>View All Accounts</h1>
+</a>
+
+{% for x in messages %}
+    <h1 style="font-family: Arial;color: red">
+    {{ x }}
+    </h1>
+{% endfor %}
+</body>
+</html>
